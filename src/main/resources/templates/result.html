@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ckeckin Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Результат</h1>
+
+<p th:text="'id: ' + ${checkin.id}" />
+<p th:text="'name: ' + ${checkin.name}" />
+<p th:text="'email: ' + ${checkin.email}" />
+<p th:text="'content: ' + ${checkin.content}" />
+<a href="/checkin">Отправить сообщение</a>
+</body>
+</html>

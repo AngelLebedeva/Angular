@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Checkin Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Регистрация</h1>
+<form action="#" method="post" th:action="@{/checkin}" th:object="${checkin}">
+    <p>Id: <input type="text" th:field="*{id}" /></p>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Email: <input type="text" th:field="*{email}" /></p>
+    <p>Message: <input type="text" th:field="*{content}" /></p>
+    <p><input type="submit" value="Отправить" />
+        <input type="reset" value="Сбросить" /></p>
+</form>
+</body>
+</html>
